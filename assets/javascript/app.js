@@ -13,52 +13,62 @@
         {
             "question" : "... The Wu-Tang Clan?",
             "options" : ["Redman", "Method Man", "GZA", "Ghostface Killah"],
-            "answer" : "Redman"
+            "answer" : "Redman",
+            "answerInfo" : "Redman released two collaboration albums with Method Man"
         },
         {
             "question" : "... A Tribe Called Quest?",
             "options" : ["Q-Tip", "Jarobi White", "Phife Dawg", "Busta Rhyhmes"],
-            "answer" : "Busta Rhyhmes"
+            "answer" : "Busta Rhyhmes",
+            "answerInfo" : "Busta was featured on the song 'Oh My God' by ATCQ"
         },
         {
             "question" : "... The Beatles?",
             "options" : ["John Lennon", "Bob Dylan", "Ringo Starr", "George Harrison"],
-            "answer" : "Bob Dylan"
+            "answer" : "Bob Dylan",
+            "answerInfo" : "Bob Dylan introduced The Beatles to cannabis"
         },
         {
             "question" : "... The Supremes?",
             "options" : ["Patti Labelle", "Diana Ross", "Mary Wilson", "Florence Ballard"],
-            "answer" : "Patti Labelle"
+            "answer" : "Patti Labelle",
+            "answerInfo" : "Was part of Labelle"
         },
         {
             "question" : "... Run-D.M.C?",
             "options" : ["Joseph Simmons", "Darryl McDaniels", "Jason Mizell", "James Todd Smith"],
-            "answer" : "James Todd Smith"
+            "answer" : "James Todd Smith",
+            "answerInfo" : "James Todd Smith a.k.a. LL Cool J"
         },
         {
             "question" : "... Destiny's Child?",
             "options" : ["Beyoncé Knowles", "Serena Williams", "Michelle Williams", "Kelly Rowland"],
-            "answer" : "Serena Williams"
+            "answer" : "Serena Williams",
+            "answerInfo" : "Serena Williams is a pro tennis player"
         },
         {
             "question" : "...the Fugees?",
             "options" : ["Lauryn Hill", "Nas", "Pras", "Wyclef Jean"],
-            "answer" : "Nas"
+            "answer" : "Nas",
+            "answerInfo" : "Nas was a member of The Firm"
         },
         {
             "question" : "...The Strokes?",
             "options" : ["Julian Casablancas", "Nick Valensi", "Nikolai Fraiture", "Albert Hammond"],
-            "answer" : "Albert Hammond"
+            "answer" : "Albert Hammond",
+            "answerInfo" : "Alber Hammond is Albert Hammond Jr.'s father"
         },
         {
             "question" : "...N-Sync?",
             "options" : ["Lance Bass", "Chris Kirkpatrick", "Joey Fatone", "Jeff Timmons"],
-            "answer" : "Jeff Timmons"
+            "answer" : "Jeff Timmons",
+            "answerInfo" : "Jeff Timmons was part of 98 degrees"
         },
         {
             "question" : "...the Beastie Boys?",
             "options" : ["Vanilla Ice", "Ad-Rock", "MCA", "Mike D"],
-            "answer" : "Vanilla Ice"
+            "answer" : "Vanilla Ice",
+            "answerInfo" : "Ice Ice Baby"
         }
         ]
     }
@@ -113,6 +123,7 @@
     $('.list-group-item').on('click', function(){
 
         if (checkAnswer($(this).html()) === true) {
+            $('#information').html(quiz.questionBank[questionCount].answerInfo);
             correctAnswers++;
             console.log(" # of Correct Answers: " + correctAnswers);
             questionCount++;
@@ -120,6 +131,7 @@
         }
 
         else if (checkAnswer($(this).html()) === false){
+            $('#information').html(quiz.questionBank[questionCount].answerInfo);
             wrongAnswers++;
             console.log(" # of Incorrect Answers: " + wrongAnswers);
             questionCount++;
@@ -150,6 +162,7 @@
         if (countdown === 0){
             clearInterval(counter);
             unanswered++;
+            $('#information').html(quiz.questionBank[questionCount].answerInfo);
     //moves to next question
             questionCount++;
 
