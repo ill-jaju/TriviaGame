@@ -1,0 +1,33 @@
+body {
+    background-image: url('../images/vinyl.jpg');
+    background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.embossedtext {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.embossed {
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: inset -2px 2px 1px rgba(0, 0, 0, 0.2), -2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.content {
+  font-size: 18px;
+  padding: 15px;
+}
+
