@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>members only trivia</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <title>members only trivia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-
-  <section class="container">
-
-    <header class="page-header embossedtext">
-      <h1>Music Trivia<br><small>Who is not a member of....
+    <section class="container">
+        <header class="page-header embossedtext">
+            <h1>Music Trivia<br><small>Who is not a member of....
       </small></br></h1>
-    </header>
-    
-    <button class="start btn btn-2">Start Game</button>
-    
-    <h3 id="quizQuestion" class="embossedtext"></h3>
-
-    <div id="multipleChoice">
-      
-      <div class="list-group choices">
-        <a id="a" class="list-group-item"></a>
-        <a id="b" class="list-group-item"></a>
-        <a id="c" class="list-group-item"></a>
-        <a id="d" class="list-group-item"></a>
-      </div>
-      
-      <div id="timer" class="embossedtext"></div>
-
-      <div class="panel panel-default results">
-      
-      <div class="panel-heading">Your Trivia Results</div>
-        
-        <div class="panel-body">
-          <ul class="list-group">
-            <li id="correct"></li>
-            <li id="wrong"></li>
-            <li id="unanswered"></li>
-          </ul>
-          <!-- <button id="reset" class="btn btn-2">Reset</button> -->
+        </header>
+        <button class="start btn btn-2">Start Game</button>
+        <h3 id="quizQuestion" class="embossedtext"></h3>
+        <div id="multipleChoice">
+            <div class="list-group choices">
+                <a id="a" class="list-group-item"></a>
+                <a id="b" class="list-group-item"></a>
+                <a id="c" class="list-group-item"></a>
+                <a id="d" class="list-group-item"></a>
+            </div>
+            <div id="timer" class="embossedtext"></div>
+            <div id="information" class="embossedtext"></div>
+            <div class="panel panel-default results">
+                <div class="panel-heading">Results</div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li id="correct"></li>
+                        <li id="wrong"></li>
+                        <li id="unanswered"></li>
+                    </ul>
+                    <button id="reset" class="btn btn-2">Reset</button>
+                </div>
+            </div>
         </div>
-        
-      </div>
-    </div>
-  </section>
-
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/javascript/app.js"></script>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
+
 </html>
