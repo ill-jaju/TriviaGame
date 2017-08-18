@@ -1,9 +1,25 @@
-music trivia game
+# Music Trivia Game
 
-init commit
--lacking answer info and reset button
+ A basic trivia game using JavaScript for the logic and jQuery to manipulate HTML.
 
-060617 3am commit
--reset button is functional
--timer bug exists when reset
--answer info is displayed on the bottom concurrent with next answer
+## Getting Started
+
+-Git Clone Repository
+
+## Deployment
+
+https://jamie-jessi.github.io/TriviaGame/
+
+## Technologies Used
+
+* CSS3
+* HTML5
+* JavaScript/jQuery
+
+## Authors
+
+* **Jamie Judi** - *Initial work*
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
